@@ -17,7 +17,6 @@ this project was built in: `Nodejs`, `ejs`, `Express`
 * `invite you for a beer` 🍺 `or a coffee` ☕ [<img src="https://github.com/ricardo1470/MEVN/blob/main/src/public/images/paypal.png" alt="Github logo" width="34">](https://paypal.me/ricardo1470?locale.x=es_XC)
 ---
 
----
 <div align="center">
 
 <h2>
