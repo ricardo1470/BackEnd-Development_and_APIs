@@ -1,0 +1,34 @@
+{
+  "name": "timestampmicroservice",
+  "version": "1.0.0",
+  "description": "Build app Timestamp Microservice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src",
+    "start": "node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardo1470/BackEnd-Development_and_APIs/tree/main/TimestampMicroservice"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "cors",
+    "morgan",
+    "ejs"
+  ],
+  "author": "Ricardo Camayo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
