@@ -1,9 +1,9 @@
 > # Timestamp Microservice
 ---
-## Install from package.json
+> ## Install from package.json
 * `npm i`
 
-## running in development
+> ## running in development
 * `npm run dev`
 
 > ## Built with
