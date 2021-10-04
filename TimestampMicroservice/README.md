@@ -1,10 +1,13 @@
-> # BackEnd-Development_and_APIs
+> # Timestamp Microservice
 ---
+## Install from package.json
+* `npm i`
 
-| **Filename** | **Description** |
-|---|---|
-| [Timestamp Microservice]() | Build a full stack JavaScript app  |
-|   |   |
+## running in development
+* `npm run dev`
+
+> ## Built with
+this project was built in: `Nodejs`, `ejs`, `Express`
 
 > ## CodeInspector
 
