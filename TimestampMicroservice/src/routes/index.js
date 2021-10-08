@@ -7,7 +7,7 @@ const { getinit, getTimes, getTimestamp } = require('../controllers/init');
 router.get('/', getinit);
 
 /* timestamp */
-router.get('/api/timestamp/', getTimes);
-router.get('/api/timestamp/:timestamp', getTimestamp);
+router.get('/api/', getTimes);
+router.get('/api/:timestamp', getTimestamp);
 
 module.exports = router;
