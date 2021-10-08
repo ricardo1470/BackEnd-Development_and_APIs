@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const { getinit, getTimestamp } = require('../controllers/init');
+const { getinit, getTimes, getTimestamp } = require('../controllers/init');
 
 /* init */
 router.get('/', getinit);
 
 /* timestamp */
-router.get('/now', getTimestamp);
+router.get('/api/timestamp/', getTimes);
+router.get('/api/timestamp/:timestamp', getTimestamp);
 
 module.exports = router;

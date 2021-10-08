@@ -6,14 +6,28 @@ const getinit = (req, res, next) => {
 };
 
 const getTimestamp = ((req, res, next) => {
-    req.time = getTime();
+    let timestamp = req.params.timestamp;
+    if(timestamp.match(/\d{5,}/)){
+        timestamp = +timestamp;
+    }
+
+    let date = new Date(timestamp);
+    if(date.toUTCString() === 'Invalid Date'){
+        res.json({ error: date.toUTCString() });
+    }
+    res.json({ unix: date.valueOf(), utc: date.toUTCString() }); 
     next();
-}, (req, res) => {
-    res.json({ time: req.time });
+});
+
+const getTimes = ((req, res, next) => {
+    let date = new Date();
+    res.json({ unix: date.valueOf(), utc: date.toUTCString() });
+    next();
 });
 
 /* export functions*/
 module.exports = {
     getinit,
+    getTimes,
     getTimestamp
 }
