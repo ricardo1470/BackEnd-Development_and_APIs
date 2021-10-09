@@ -4,6 +4,10 @@
 | **Filename** | **Description** |
 |---|---|
 | [Timestamp Microservice](https://github.com/ricardo1470/BackEnd-Development_and_APIs/tree/main/TimestampMicroservice) | Build a full stack JavaScript app Timestamp Microservice |
+| [Reques tHeader](https://github.com/ricardo1470/BackEnd-Development_and_APIs/tree/main/RequestHeaderParserMicroservice)  | Build a full stack JavaScript app Request Header Parser Microservice  |
+| [URL Shortener](https://github.com/ricardo1470/BackEnd-Development_and_APIs/tree/main/URLShortenerMicroservice)  | Build a full stack JavaScript app Request URL Shortener Microservice  |
+|   |   |
+|   |   |
 |   |   |
 
 > ## CodeInspector
