@@ -1,0 +1,25 @@
+{
+  "name": "urlshortenermicroservice",
+  "version": "1.0.0",
+  "description": "> # URL Shortener Microservice --- > ## Install from package.json * `npm i`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "cors",
+    "ejs",
+    "morgan"
+  ],
+  "author": "Ricardo Camayo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
