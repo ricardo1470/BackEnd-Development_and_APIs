@@ -1,12 +1,14 @@
 const getinit = (req, res, next) => {
     //res.render('index.html', { title: '@Ricardo1470' });
     //console.log("index");
-    res.send('hola mundo')
+    res.send('hola mundo desde la ruta inicial')
     next();
 };
 
-const getHeaders = ((req, res, next) => {
-    res.json({ ipaddress: req.connection.remoteAddress, language: req.headers["accept-language"], software: req.headers["user-agent"] });
+const getUrl = async ((req, res, next) => {
+    const rest = await Url.create()
+    //res.render('index.html', { title: '@Ricardo1470' })
+    //res.send('hola mundo desde algun lugar de la app')
     next();
 });
 
@@ -14,5 +16,5 @@ const getHeaders = ((req, res, next) => {
 /* export functions*/
 module.exports = {
     getinit,
-    getHeaders
+    getUrl
 }

@@ -3,12 +3,22 @@ const cors = require('cors');
 const morgan = require('morgan');
 const path = require('path');
 const favicon = require('serve-favicon');
-
+require('dotenv').config();
+const mongoose = require('mongoose');
+//const { Schema } = mongoose;
 const port = process.env.PORT || 9000;
 
-const routesProject = require('./routes/index');
-
 const app = express();
+
+const mySecret = process.env['DB_URI'];
+
+mongoose.connect(mySecret, { useNewUrlParser: true, useUnifiedTopology: true });
+
+const Schema = new mongoose.Schema({ url: 'string' });
+
+const Url = mongoose.model('Url', Schema);
+
+const routesProject = require('./routes/index');
 
 /* settings */
 app.set('views', path.join(__dirname, 'src/views'));
